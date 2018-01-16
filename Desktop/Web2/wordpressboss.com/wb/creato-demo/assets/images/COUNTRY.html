@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://apex.oracle.com/pls/apex/f?p=4500:1003:10599517866756::NO::: -->
+<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="x-ua-compatible" content="IE=edge">
+<!--[if lt IE 7 ]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->  <!--<![endif]-->
+
+
+  
+  <title>SQL Commands</title>
+  <link rel="shortcut icon" href="https://apex.oracle.com/i/apex_ui/img/favicons/favicon.ico">
+<link rel="icon" sizes="16x16" href="https://apex.oracle.com/i/apex_ui/img/favicons/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="https://apex.oracle.com/i/apex_ui/img/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://apex.oracle.com/i/apex_ui/img/favicons/favicon-180x180.png">
+  
+  <link rel="stylesheet" href="./COUNTRY_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./COUNTRY_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./COUNTRY_files/apex_builder.min.css" type="text/css">
+<link rel="stylesheet" href="./COUNTRY_files/apex_ui.min.css" type="text/css">
+
+
+
+<link rel="stylesheet" href="./COUNTRY_files/Core.min(1).css" type="text/css">
+<link rel="stylesheet" href="./COUNTRY_files/Theme-Standard.min(1).css" type="text/css">
+
+
+<style type="text/css">
+#htmlTabHolder { overflow: auto; }
+</style>
+
+
+<script type="text/javascript">
+var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;
+</script>
+<!--[if lt IE 9]><script type="text/javascript" src="/i/libraries/jquery/1.12.3/jquery-1.12.3.min.js?v=5.1.2.00.09"></script><![endif]-->
+<!--[if gte IE 9]><!--><script type="text/javascript" src="./COUNTRY_files/jquery-2.2.3.min.js.download"></script><!--<![endif]-->
+<script type="text/javascript" src="./COUNTRY_files/desktop.min.js.download"></script>
+<script type="text/javascript" src="./COUNTRY_files/wwv_flow.js_messages"></script>
+<script type="text/javascript" src="./COUNTRY_files/legacy.min.js.download"></script>
+<script type="text/javascript" src="./COUNTRY_files/builder_all.min.js.download"></script>
+ 
+<!--[if lt IE 9]><script src="/i/libraries/apex/html5_ie.js"></script><![endif]-->
+
+
+
+
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><meta http-equiv="Cache-Control" content="no-cache">
+</head>
+<body style="overflow: hidden;" cz-shortcut-listen="true">
+<!--[if lte IE 8]><div id="outdated-browser">You are using an outdated web browser. For a list of supported browsers, please reference the Oracle Application Express Installation Guide.</div><![endif]-->
+<noscript>You must run this product with JavaScript enabled.</noscript>
+<form action="https://apex.oracle.com/pls/apex/wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" novalidate="" class="resize" style="display: block; height: 613px; width: 1366px;">
+<input type="hidden" name="p_flow_id" value="4500" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="1003" id="pFlowStepId"><input type="hidden" name="p_instance" value="10599517866756" id="pInstance"><input type="hidden" name="p_page_submission_id" value="105675679037828467028940803434099666492" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="A" id="pReloadOnSubmit"><input type="hidden" value="105675679037828467028940803434099666492" id="pSalt"><script type="text/javascript"> 
+g_Running="SQL Statement Running";
+</script>
+<input type="hidden" id="P1003_POPUP" name="P1003_POPUP" value="0"><input type="hidden" id="P1003_SQL_COMMAND2" name="P1003_SQL_COMMAND2" value="CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4) CONSTRAINT REGION_COUNTRY_REGION_ID_FK REFERENCES REGIONS(REGION_ID));
+"><input type="hidden" id="P1003_QUERY_ID" name="P1003_QUERY_ID" value=""><input type="hidden" id="P1003_DESC_OBJ" name="P1003_DESC_OBJ" value=""><input type="hidden" id="P1003_RETURN_INTO" name="P1003_RETURN_INTO" value=""><input type="hidden" id="P1003_JOBID" name="P1003_JOBID" value=""><div id="R386906063356677524" class="a-Header apex-sql-workshop">
+<div id="R386906446198682887" class="a-Header-col a-Header-col--left">
+<div id="R386906842726682887" class=""><a href="https://apex.oracle.com/pls/apex/f?p=4500:1000:10599517866756::NO::::" class="a-Header-logo" title="Application Express Home"><span class="a-Header-apexLogo"><span class="u-VisuallyHidden">Application Express Home</span></span></a>
+</div>
+
+<div id="a_Header_menu" class="a-Header-tabsContainer a-MenuBar a-MenuBar--tabs" style="" tabindex="-1" role="menubar"><ul><li id="a_Header_menu_0" class="a-MenuBar-item a-Menu--split tab-app-builder"><a role="menuitem" class="a-MenuBar-label" id="a_Header_menu_0i" href="https://apex.oracle.com/pls/apex/f?p=4000:1500:10599517866756::NO::P1500_SHOW:" tabindex="-1" aria-haspopup="true">App Builder</a><span class="a-Menu-subMenuCol"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_0m" class="a-Menu a-Menu--top" role="menu" tabindex="-1" style="display:none;"></div></li><li id="a_Header_menu_1" class="a-MenuBar-item a-Menu--split a-Menu--current tab-sql-workshop"><a role="menuitem" class="a-MenuBar-label" id="a_Header_menu_1i" href="https://apex.oracle.com/pls/apex/f?p=4500:3002:10599517866756::NO:::" aria-haspopup="true">SQL Workshop <span class="u-VisuallyHidden">current</span></a><span class="a-Menu-subMenuCol"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_1m" class="a-Menu a-Menu--top" role="menu" tabindex="-1" style="display:none;"></div></li><li id="a_Header_menu_2" class="a-MenuBar-item a-Menu--split tab-team-dev"><a role="menuitem" class="a-MenuBar-label" id="a_Header_menu_2i" href="https://apex.oracle.com/pls/apex/f?p=4800:4000:10599517866756:::::" tabindex="-1" aria-haspopup="true">Team Development</a><span class="a-Menu-subMenuCol"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_2m" class="a-Menu a-Menu--top" role="menu" tabindex="-1" style="display:none;"></div></li><li id="a_Header_menu_3" class="a-MenuBar-item a-Menu--split tab-apps"><a role="menuitem" class="a-MenuBar-label" id="a_Header_menu_3i" href="https://apex.oracle.com/pls/apex/f?p=4750:50:10599517866756:::::" tabindex="-1" aria-haspopup="true">Packaged Apps</a><span class="a-Menu-subMenuCol"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_3m" class="a-Menu a-Menu--top" role="menu" tabindex="-1" style="display:none;"></div></li></ul></div>
+</div>
+
+<div id="R386906639708682887" class="a-Header-col a-Header-col--right">
+<div id="R385807144565239746" class="a-Header-navLinks">
+<div id="adminMenu" class=""></div>
+
+<div id="helpMenu" class=""></div>
+<button class="a-Button a-Button--noLabel a-Button--iconTextButton js-menuButton a-Button--noUI a-Button--navLink" onclick="void(0);" type="button" title="Administration" aria-label="Administration" id="header-adminMenu" data-menu="adminMenu_menu" aria-haspopup="true" aria-expanded="false"><span class="a-Icon icon-gears-alt" aria-hidden="true"></span><span class="a-Icon icon-menu-drop-down" aria-hidden="true"></span></button><button class="a-Button a-Button--noLabel a-Button--iconTextButton js-menuButton a-Button--noUI a-Button--navLink" onclick="void(0);" type="button" title="Help" aria-label="Help" id="header-helpMenu" data-menu="helpMenu_menu" aria-haspopup="true" aria-expanded="false"><span class="a-Icon icon-help" aria-hidden="true"></span><span class="a-Icon icon-menu-drop-down" aria-hidden="true"></span></button></div>
+
+<div id="R385816859034290012" class="a-Header-account"><button class="a-Button a-Button--noLabel a-Button--iconTextButton a-Button--noUI a-Button--navLink js-menuButton a-Button--accountMenu" type="button" title="Account Menu" data-menu="accountMenu_menu" id="header-accountMenu" aria-haspopup="true" aria-expanded="false"><span class="a-Header-userPhoto">
+<span class="a-Icon a-Icon--medium icon-user-round"></span>
+</span><span class="a-Header-userName">
+Pareshbhai
+</span><span class="a-Icon icon-menu-drop-down"></span>
+</button>
+
+</div>
+</div>
+</div><div id="R387929033434561917" class="a-ControlBar apex-sql-workshop">
+<div id="R387929284740561918" class="a-ControlBar-col a-ControlBar-col--noPadding">
+<ul class="a-Breadcrumb"><li class="a-Breadcrumb-item"><a href="https://apex.oracle.com/pls/apex/f?p=4500:3002:10599517866756::NO:::" class="a-Breadcrumb-label"><span class="u-VisuallyHidden">SQL Workshop</span><span class="a-Icon icon-breadcrumb-previous"></span></a></li><li class="a-Breadcrumb-item a-Breadcrumb-item is-active"><span class="a-Breadcrumb-label">SQL Commands</span></li></ul>
+</div>
+
+<div id="R387929403973561918" class="a-ControlBar-col">
+<div id="apex-control-icons" class="a-Form a-Form--small a-Form--schemaSelect"><div class="a-Form-fieldContainer " id="P1003_SCHEMA_CONTAINER"><div class="a-Form-labelContainer">
+<label for="P1003_SCHEMA" id="P1003_SCHEMA_LABEL" class="a-Form-label">Schema</label>
+</div><div class="a-Form-inputContainer"><select id="P1003_SCHEMA" name="P1003_SCHEMA" class="a-Form-select" onchange="sc_SetSchemaOnly()" size="1"><option value="GIT085" selected="selected">GIT085</option>
+</select><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="11765804246007547" title="Help Text: Schema" aria-label="Help Text: Schema" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P1003_SCHEMA_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div></div></div>
+</div>
+</div>
+
+
+<span id="APEX_SUCCESS_MESSAGE" data-template-id="690783685471803190_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="690783685471803190_E" class="apex-page-error u-hidden"></span>
+
+
+  <div class="a-Body resize" style="display: block; height: 491px; width: 1366px;">
+    <main class="a-Main resize" style="display: block; height: 491px; width: 1366px;">
+        <div style="display:none"></div><div id="R11140505307196687" class=""><input type="hidden" id="OB_OBJECT_NAME" name="OB_OBJECT_NAME" value=""><input type="hidden" id="P0_PPRTIMESTAMP" name="P0_PPRTIMESTAMP" value=""></div><div id="SqlAndResults" class="a-Splitter resize" style="height: 491px; width: 1366px; position: relative;">
+<div id="R1157686476230338225" class="resize" style="position: absolute; width: 1366px; height: 100px; top: 0px;">
+<div class="a-ButtonRegion a-ButtonRegion--wizard a-ButtonRegion--withItems a-ButtonRegion--slimPadding a-ButtonRegion--noBorder" id="scRightHeader">
+  <div class="a-ButtonRegion-wrap">
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--left"><div class="a-ButtonRegion-buttons"></div></div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--content">
+      <h2 class="a-ButtonRegion-title">Top Header</h2>
+      <div class="apex-grid-container">
+<div class="apex-row">
+<div class="apex-col apex-col-4 ">
+<div class="a-Form-fieldContainer " id="P1003_ROWS_CONTAINER"><div class="a-Form-labelContainer">
+<label for="P1003_ROWS" id="P1003_ROWS_LABEL" class="a-Form-label">Rows</label>
+</div><div class="a-Form-inputContainer"><select id="P1003_ROWS" name="P1003_ROWS" class="selectlist apex-item-select" size="1"><option value="10" selected="selected">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="200">200</option>
+<option value="500">500</option>
+<option value="1000">1000</option>
+<option value="5000">5000</option>
+<option value="10000">10000</option>
+<option value="100000">100000</option>
+</select><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="138940226594571588" title="Help Text: Rows" aria-label="Help Text: Rows" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P1003_ROWS_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div></div>
+</div><div class="apex-col apex-col-4 ">
+<span id="P1003_ERASE_ICON" class="display_only apex-item-display-only"><a href="javascript:setValue(&#39;P1003_SQL_COMMAND1&#39;,&#39;&#39;);$x(&#39;P1003_SQL_COMMAND1&#39;).focus();" class="a-Button a-Button--small">Clear Command</a></span>
+</div><div class="apex-col apex-col-4 ">
+<span id="P1003_FIND_ICON" class="display_only apex-item-display-only"><a href="javascript:popupURL(&#39;f?p=4500:24:10599517866756:SC::24:P24_STATE:SC:&#39;);" class="a-Button a-Button--small a-Button--padLeft">Find Tables</a></span><input type="hidden" id="P1003_LANGUAGE" name="P1003_LANGUAGE" value="en"><input type="hidden" data-for="P1003_LANGUAGE" value="5HiHPXA0d1UkIrRR9MI5R6wEX29uqiHFmWIT95ei_Vwr8vDZUkMxtdoKXNJO7DJDyVy8y7g2HoyDqY8yjiFRlg">
+</div>
+</div>
+</div>
+      <div class="a-ButtonRegion-buttons"></div>
+    </div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--right"><div class="a-ButtonRegion-buttons"><button onclick="void(0);" class="a-Button " type="button" id="B10646217569354338">Save</button><button onclick="void(0);" class="a-Button a-Button--hot " type="button" id="B10644629905348428">Run</button></div></div>
+  </div>
+</div>
+
+<div id="scCommandHolder" class="a-Form--slimPadding resize d1" style="height: 52px; width: 1366px;"><div class="a-Form-fieldContainer " id="P1003_SQL_COMMAND1_CONTAINER"><div class="a-Form-labelContainer a-Form-labelContainer--visuallyhidden">
+<label for="P1003_SQL_COMMAND1" id="P1003_SQL_COMMAND1_LABEL" class="a-Form-label visuallyhidden">SQL Command</label>
+</div><div class="a-Form-inputContainer"><fieldset id="P1003_SQL_COMMAND1_fieldset" class="textarea apex-item-textarea" tabindex="-1"><textarea name="P1003_SQL_COMMAND1" rows="4" cols="30" maxlength="32767" wrap="virtual" id="P1003_SQL_COMMAND1" class="textarea apex-item-textarea a-Form-textarea--code" style="resize: none; height: 52px; width: 1366px;"></textarea></fieldset><span id="P1003_SQL_COMMAND1_error_placeholder" class="a-Form-error" data-template-id="717397144393801382_ET"></span></div></div></div>
+</div><div class="a-Splitter-barV a-Splitter--end ui-draggable" title="Bottom Splitter" style="position: absolute; left: 0px; top: 100px; width: 1366px;"><div></div><span role="separator" class="a-Splitter-thumb" tabindex="0" aria-expanded="true" title="Bottom Splitter"></span></div>
+
+<div id="scBottomHolder" class="resize" aria-live="polite" style="position: absolute; width: 1366px; height: 383px; top: 108px;">
+<table class="htmldbTabbedNavigationList" border="0" cellpadding="0" cellspacing="0" summary=""><tbody><tr>
+
+<td valign="bottom"><a href="javascript:ob_PPR_TAB(&#39;#&#39;)" class="tabcurrent" id="result_tab" onclick="html_TabClick(this,&#39;resultsHolder&#39;);return false;" title="Results">Results</a></td>
+<td valign="bottom"><a href="javascript:ob_PPR_TAB(&#39;#&#39;)" id="explain_tab" onclick="sc_getPlan();html_TabClick(this,&#39;explainHolder&#39;);return false;" title="Explain" class="">Explain</a></td>
+
+<td valign="bottom"><a href="javascript:ob_PPR_TAB(&#39;#&#39;)" id="describe_tab" onclick="sc_getDesc();html_TabClick(this,&#39;describeHolder&#39;);return false;" title="Describe" class="">Describe</a></td>
+
+<td valign="bottom"><a href="javascript:ob_PPR_TAB(&#39;#&#39;)" id="savedsql_tab" onclick="sc_getSavedSQL();html_TabClick(this,&#39;SavedSQLHolder&#39;);return false;" title="Saved SQL" class="">Saved SQL</a></td>
+
+<td valign="bottom"><a href="javascript:ob_PPR_TAB(&#39;#&#39;)" id="history_tab" onclick="sc_DisplayHist();html_TabClick(this,&#39;historyHolder&#39;);return false;" title="History" class="">History</a></td>
+
+<td width="100%"><br></td></tr></tbody></table>
+
+<div id="htmlTabHolder" class="resize" style="height: 343px; width: 1366px;">
+<div id="resultsHolder" class="fielddata" style="display: block;"><div id="BOX_BODY"><div id="R11140505307196687" class=""><input type="hidden" id="OB_OBJECT_NAME" name="OB_OBJECT_NAME" value=""><input type="hidden" id="P0_PPRTIMESTAMP" name="P0_PPRTIMESTAMP" value=""></div><input type="hidden" id="P1200_ROWS" name="P1200_ROWS" value="10"><input type="hidden" id="P1200_PREV_SQL" name="P1200_PREV_SQL" value="CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4) CONSTRAINT REGION_COUNTRY_REGION_ID_FK REFERENCES REGIONS(REGION_ID));
+"><input type="hidden" id="P1200_ACTION" name="P1200_ACTION" value=""><input type="hidden" id="P1200_BINDS" name="P1200_BINDS" value=""><input type="hidden" id="P1200_BIND_VALS" name="P1200_BIND_VALS" value=""><input type="hidden" id="P1200_TYPE" name="P1200_TYPE" value=""><input type="hidden" id="P1200_STMT" name="P1200_STMT" value=""><pre>
+Table created.
+</pre>
+<br><span style="font-size:13px">               0.05 seconds</span><div class="hide-show-region" id="dbms_output_show_hide" style="display:none;">
+  <div class="hide-show-top">
+    <div class="hide-show-title"><h3>
+      <a href="https://apex.oracle.com/pls/apex/f?p=4500:1003:10599517866756::NO:::#" onclick="htmldb_ToggleTableBody(&#39;idbms_output_show_hide&#39;,&#39;bodydbms_output_show_hide&#39;); return false;">
+        <img src="./COUNTRY_files/rollup_plus_dgray.gif" class="pseudoButtonActive" id="idbms_output_show_hide" alt="">
+        DBMS Output
+      </a></h3>    
+    </div>
+  </div>
+  <div class="hide-show-body" style="display:none;" id="bodydbms_output_show_hide"><div id="DBMS_OUTPUT_DIV"></div></div>
+</div></div></div>
+
+<div id="explainHolder" style="display:none;"></div>
+
+<div id="describeHolder" style="display: none;"><div id="BOX_BODY"><table id="apex_layout_22151631482530337" border="0" class="formlayout" role="presentation"><tbody><tr><td nowrap="nowrap" align="right"><div class="a-Form-labelContainer">
+<label for="P139_TYPE" id="P139_TYPE_LABEL" class="a-Form-label">Object Type</label>
+</div></td><td align="left"><div class="a-Form-inputContainer"><input type="hidden" name="P139_TYPE" id="P139_TYPE" value="TABLE"><input type="hidden" data-for="P139_TYPE" value="9LY46v-Kop0CCu9M5AqqtEJd_7yNFK9Z3R3IJkk-H8Lki4XxYpz5tnkofraZPpPok44fDSTzIKcjMCrn3zUIig"><span id="P139_TYPE_DISPLAY" class="display_only apex-item-display-only fielddatabold">TABLE</span><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="22156222310565561" title="Help Text: Object Type" aria-label="Help Text: Object Type" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P139_TYPE_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div></td><td nowrap="" align="right"><div class="a-Form-labelContainer">
+<label for="P139_OBJECT" id="P139_OBJECT_LABEL" class="a-Form-label">Object</label>
+</div></td><td align="left"><div class="a-Form-inputContainer"><input type="hidden" name="P139_OBJECT" id="P139_OBJECT" value="DEPARTMENTS"><input type="hidden" data-for="P139_OBJECT" value="_8aZxUgqoyCbbyiiWfoYji9XkRQKP0dlNvHcoXb2-9_eqfW5_5pwt8AuE9LEpk8ieiTIZB4JzwXoRMup6dct-A"><span id="P139_OBJECT_DISPLAY" class="display_only apex-item-display-only fielddatabold">DEPARTMENTS</span><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="22174606305655533" title="Help Text: Object" aria-label="Help Text: Object" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P139_OBJECT_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div><input type="hidden" id="P139_STATUS" name="P139_STATUS" value="VALID"><input type="hidden" id="P139_OWNER" name="P139_OWNER" value="GIT085"><input type="hidden" id="P139_ACTION" name="P139_ACTION" value="GET"><input type="hidden" id="P139_PREV_SQL" name="P139_PREV_SQL" value="CREATE TABLE DEPARTMENTS (DEPARTMENT_ID NUMBER(4) PRIMARY KEY NOT NULL,DEPARTMENT_NAME VARCHAR2(30) NOT NULL,MANAGER_ID NUMBER(6),LOCATION_ID NUMBER(4));"></td></tr></tbody></table><div id="R11140505307196687" class=""><input type="hidden" id="OB_OBJECT_NAME" name="OB_OBJECT_NAME" value=""><input type="hidden" id="P0_PPRTIMESTAMP" name="P0_PPRTIMESTAMP" value=""></div><div class="a-Report " id="report_R367602808298431816">
+  <div class="a-Report-wrap">
+    <table class="a-Report-pagination"><tbody><tr><td></td></tr></tbody></table>
+    <div class="a-Report-tableWrap">
+    <table class="a-Report-report" summary="Tables and Views">
+<thead><tr><th class="a-Report-colHead" align="center" id="TABLE_NAME">Table</th><th class="a-Report-colHead" align="center" id="COLUMN_NAME">Column</th><th class="a-Report-colHead" align="center" id="DATA_TYPE">Data Type</th><th class="a-Report-colHead" align="center" id="DATA_LENGTH">Length</th><th class="a-Report-colHead" align="center" id="DATA_PRECISION">Precision</th><th class="a-Report-colHead" align="center" id="DATA_SCALE">Scale</th><th class="a-Report-colHead" align="center" id="PK">Primary Key</th><th class="a-Report-colHead" align="center" id="NULLABLE">Nullable</th><th class="a-Report-colHead" align="center" id="DATA_DEFAULT">Default</th><th class="a-Report-colHead" align="center" id="COMMENTS">Comment</th></tr></thead><tbody>
+<tr><td class="a-Report-cell" headers="TABLE_NAME"><a href="javascript:ret_Column(&#39;GIT085.DEPARTMENTS&#39;);">DEPARTMENTS</a></td><td class="a-Report-cell" headers="COLUMN_NAME"><a href="javascript:ret_Column(&#39;DEPARTMENT_ID&#39;);">DEPARTMENT_ID</a></td><td class="a-Report-cell" headers="DATA_TYPE">NUMBER</td><td class="a-Report-cell" headers="DATA_LENGTH"> - </td><td class="a-Report-cell" headers="DATA_PRECISION">4</td><td class="a-Report-cell" headers="DATA_SCALE">0</td><td class="a-Report-cell" align="center" headers="PK">1</td><td class="a-Report-cell" align="center" headers="NULLABLE"> - </td><td class="a-Report-cell" headers="DATA_DEFAULT"> - </td><td class="a-Report-cell" headers="COMMENTS"> - </td></tr>
+<tr><td class="a-Report-cell" headers="TABLE_NAME">&nbsp;</td><td class="a-Report-cell" headers="COLUMN_NAME"><a href="javascript:ret_Column(&#39;DEPARTMENT_NAME&#39;);">DEPARTMENT_NAME</a></td><td class="a-Report-cell" headers="DATA_TYPE">VARCHAR2</td><td class="a-Report-cell" headers="DATA_LENGTH">30</td><td class="a-Report-cell" headers="DATA_PRECISION"> - </td><td class="a-Report-cell" headers="DATA_SCALE"> - </td><td class="a-Report-cell" align="center" headers="PK"> - </td><td class="a-Report-cell" align="center" headers="NULLABLE"> - </td><td class="a-Report-cell" headers="DATA_DEFAULT"> - </td><td class="a-Report-cell" headers="COMMENTS"> - </td></tr>
+<tr><td class="a-Report-cell" headers="TABLE_NAME">&nbsp;</td><td class="a-Report-cell" headers="COLUMN_NAME"><a href="javascript:ret_Column(&#39;MANAGER_ID&#39;);">MANAGER_ID</a></td><td class="a-Report-cell" headers="DATA_TYPE">NUMBER</td><td class="a-Report-cell" headers="DATA_LENGTH"> - </td><td class="a-Report-cell" headers="DATA_PRECISION">6</td><td class="a-Report-cell" headers="DATA_SCALE">0</td><td class="a-Report-cell" align="center" headers="PK"> - </td><td class="a-Report-cell" align="center" headers="NULLABLE"><img src="./COUNTRY_files/check_small_black.gif" border="0" height="15" width="15" alt="nullable"></td><td class="a-Report-cell" headers="DATA_DEFAULT"> - </td><td class="a-Report-cell" headers="COMMENTS"> - </td></tr>
+<tr><td class="a-Report-cell" headers="TABLE_NAME">&nbsp;</td><td class="a-Report-cell" headers="COLUMN_NAME"><a href="javascript:ret_Column(&#39;LOCATION_ID&#39;);">LOCATION_ID</a></td><td class="a-Report-cell" headers="DATA_TYPE">NUMBER</td><td class="a-Report-cell" headers="DATA_LENGTH"> - </td><td class="a-Report-cell" headers="DATA_PRECISION">4</td><td class="a-Report-cell" headers="DATA_SCALE">0</td><td class="a-Report-cell" align="center" headers="PK"> - </td><td class="a-Report-cell" align="center" headers="NULLABLE"><img src="./COUNTRY_files/check_small_black.gif" border="0" height="15" width="15" alt="nullable"></td><td class="a-Report-cell" headers="DATA_DEFAULT"> - </td><td class="a-Report-cell" headers="COMMENTS"> - </td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="a-Report-links"></div>
+    <table class="a-Report-pagination a-Report-pagination a-Report-pagination--bottom"></table>
+  </div>
+</div></div></div>
+
+
+
+
+<script language="JavaScript1.1" type="text/javascript" style="display: none;">
+     <!-- Comment out script for old browsers
+ function filter_escape(in_value) {
+                out_value = escape( in_value );
+                return out_value;
+            }
+        function genList0_p_t02_4(filter)
+         {
+         
+pUrl = "wwv_flow_utilities.gen_popup_list";
+pUrl += "?p_filter="  + filter_escape(filter.value);
+pUrl += "&p_name=" + escape('p_t02');
+pUrl += "&p_element_index=" + escape('4');
+pUrl += "&p_form_index=" + escape('0');
+pUrl += "&p_max_elements=" + escape('');
+pUrl += "&p_escape_html=" + escape('');
+pUrl += "&p_ok_to_query=" + escape('YES');
+pUrl += "&p_flow_id=" + escape('4500');
+pUrl += "&p_page_id=" + escape('139');
+pUrl += "&p_session_id=" + escape('10599517866756');
+pUrl += "&p_eval_value=" + escape('');
+pUrl += "&p_translation=" + escape('N');
+pUrl += "&p_lov=" + filter_escape('select owner||\'.\'||object_name d,owner||\'.\'||object_name r  from sys.dba_objects   where object_type = :p139_type   and object_name not like \'BIN%\'   and object_name not like \'DR$%\'   order by 1');
+pUrl += "&p_lov_checksum=11C9E09D7D7595D2A70B20B404698D22";
+cDebug(pUrl)
+           w = open(pUrl,"winLovList","Scrollbars=1,resizable=1,width=400,height=500");
+           if (w.opener == null)
+             w.opener = self;
+           w.focus();
+         }//-->
+     </script>
+
+<div id="historyHolder" style="display: none;"><div id="BOX_BODY"><div class="a-ButtonRegion a-ButtonRegion--wizard a-ButtonRegion--withItems a-ButtonRegion--noBorder a-Form--autoWidthLabels" id="R26154723718225041">
+  <div class="a-ButtonRegion-wrap">
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--left"><div class="a-ButtonRegion-buttons"></div></div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--content">
+      <h2 class="a-ButtonRegion-title">Top Bar</h2>
+      <table id="apex_layout_26154723718225041" border="0" class="formlayout" role="presentation"><tbody><tr><td nowrap="nowrap" align="right"><div class="a-Form-labelContainer">
+<label for="P1201_FIND" id="P1201_FIND_LABEL" class="a-Form-label">Find</label>
+</div></td><td align="left"><div class="a-Form-inputContainer"><input type="text" id="P1201_FIND" name="P1201_FIND" class="text_field apex-item-text" value="" size="30" maxlength="2000"><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="13468207898983653" title="Help Text: Find" aria-label="Help Text: Find" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P1201_FIND_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div></td><td align="left" valign="middle"><button onclick="sc_DisplayHist(true);" class="a-Button a-Button--small a-Button--primary" type="button" id="B23976007778699484">Go</button></td></tr></tbody></table>
+      <div class="a-ButtonRegion-buttons"></div>
+    </div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--right"><div class="a-ButtonRegion-buttons"></div></div>
+  </div>
+</div><div class="a-Region a-Region--noPadding a-Region--accessibleHeader" id="R5983109938894128" role="group" aria-labelledby="R5983109938894128_heading">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R5983109938894128_heading">SQL Command History</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <input type="hidden" id="P1201_PASSBACK1" name="P1201_PASSBACK1" value=""><input type="hidden" id="P1201_PASSBACK2" name="P1201_PASSBACK2" value=""><input type="hidden" id="P1201_HISTORY_ID" name="P1201_HISTORY_ID" value=""><div class="a-Report " id="report_R5983109938894128">
+  <div class="a-Report-wrap">
+    <table class="a-Report-pagination"><tbody><tr><td></td></tr></tbody></table>
+    <div class="a-Report-tableWrap">
+    <table class="a-Report-report" summary="SQL Command History">
+<thead><tr><th class="a-Report-colHead" align="left" id="CREATED">Time</th><th class="a-Report-colHead" align="left" id="SQL_CMD">SQL</th><th class="a-Report-colHead" align="center" id="PARSED_SCHEMA">Schema</th></tr></thead><tbody>
+<tr><td class="a-Report-cell" headers="CREATED">23 seconds ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22207775959664680443&#39;,&#39;GIT085&#39;);">DROP TABLE DEPARTMENTS;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138356871734019893&#39;,&#39;GIT085&#39;);">CREATE TABLE JOB_GRADES (GRADE_LEVEL VARCHAR2(4),LOWEST_SAL NUMBER(6),HIGHEST_SAL NUMBER(4));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138341201751014356&#39;,&#39;GIT085&#39;);">CREATE TABLE JOB_GRADES (GRADE_LEVEL VARCHAR2(4),LOWEST_SAL NUMBER(6),HIGHEST_SAL NUMBER(4));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138326071593012482&#39;,&#39;GIT085&#39;);">CREATE TABLE JOB GRADES (GRADE_LEVEL VARCHAR2(4),LOWEST_SAL NUMBER(6),HIGHEST_SAL NUMBER(4));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138220565236974975&#39;,&#39;GIT085&#39;);">CREATE TABLE JOBS (JOB_ID NUMBER(4) PRIMARY KEY,JOB_TITLE VARCHAR2(35),MIN_SAL NUMBER(6),MAX_SAL NUM</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138217464974968402&#39;,&#39;GIT085&#39;);">CREATE TABLE JOBS (JOB_ID NUMBER(4) PRIMARY KEY,JOB_TITLE VARCHAR2(35),MIN_SAL NUMBER(6),MAX_SAL NUM</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22138051090850980411&#39;,&#39;GIT085&#39;);">CREATE TABLE JOBS (JOB_ID NUMBER(4) PRIMARY KEY,JOB_TITLE VARCHAR2(35),MIN SAL NUMBER(6),MAX_SAL NUM</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137993549416944652&#39;,&#39;GIT085&#39;);">CREATE TABLE DEPARTMENTS (DEPARTMENT_ID NUMBER(4) PRIMARY KEY NOT NULL,DEPARTMENT_NAME VARCHAR2(20)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137982016442939179&#39;,&#39;GIT085&#39;);">CREATE TABLE DEPARTMENTS (DEPARTMENT_ID NUMBER(4) PRIMARY KEY NOT NULL,DEPARTMENT_NAME VARCHAR2(20)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137944544721905940&#39;,&#39;GIT085&#39;);">SELECT *FROM DEPARTMENTS;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137818272708880837&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137851066833893930&#39;,&#39;GIT085&#39;);">DROP TABLE COUNTRY;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137844611084890030&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137844458292888114&#39;,&#39;GIT085&#39;);">DROP TABLE COUNTRY;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137795234071880324&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137779504419871301&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137738079874855684&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4),</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">19 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22137675964550849854&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129473882757021874&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129453661715016293&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129346029818998347&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY ( COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129329576298996555&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129310056437991568&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARYKEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4),</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22129308915025990289&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22128981833234968919&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY(COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4),</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">24 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22128952960265950159&#39;,&#39;GIT085&#39;);">CREATE TABLE COUNTRY (COUNTRY_ID NUMBER(4) PRIMARY KEY,COUNTRY_NAME VARCHAR2(20),REGION_ID NUMBER(4)</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">25 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22128346099500860521&#39;,&#39;GIT085&#39;);">CREATE TABLE REGIONS (REGION_ID NUMBER(4) PRIMARY KEY,REGION_NAME VARCHAR2(18));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">25 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22128244936312840667&#39;,&#39;GIT085&#39;);">CREATE TABLE REGIONS (REGION_ID NUMBER(4) PRIMARY KEY,REGION_NAME VARCHAR2(18));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">25 hours ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;22128049934211841777&#39;,&#39;GIT085&#39;);">CREATE TABLE REGIONS (REGION ID NUMBER(4) PRIMARY KEY,REGION NAME VARCHAR2(18));</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21375355829398523978&#39;,&#39;GIT085&#39;);">SELECT EMPLOYEE_ID,LAST_NAME,EMAIL,SALARY,DEPT_ID FROM employees WHERE UPPER(LAST_NAME) = 'PRAJAPATI</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374950817691786525&#39;,&#39;GIT085&#39;);">SELECT CONCAT('HELLO','WORLD') FROM dual;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374918096773772971&#39;,&#39;GIT085&#39;);">SELECT CONCAT('HELLO','WORLD');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374908316893386444&#39;,&#39;GIT085&#39;);">CONCAT('HELLO','WORLD');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374857326393376213&#39;,&#39;GIT085&#39;);">SELECT EMPLOYEE_ID,LAST_NAME,EMAIL,SALARY,DEPT_ID FROM employees WHERE UPPER(LAST_NAME) = 'PRAJAPATI</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374825049653373995&#39;,&#39;GIT085&#39;);">SELECT EMPLOYEE_ID,LAST_NAME,EMAIL,SALARY,DEPT_ID FROM employees WHERE HIGHER(LAST_NAME) = 'PRAJAPAT</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374827680101753084&#39;,&#39;GIT085&#39;);">SELECT EMPLOYEE_ID,LAST_NAME,EMAIL,SALARY,DEPT_ID FROM employees WHERE LOWER(LAST_NAME) = 'prajapati</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374819000467367948&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374649137031732186&#39;,&#39;GIT085&#39;);">SELECT EMPLOYEE_ID,LAST_NAME,EMAIL,SALARY,DEPT_NO FROM employees WHERE LOWER(LAST_NAME) = 'prajapati</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">11 days ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21374362370077673592&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21143044970936853592&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21143041515728851572&#39;,&#39;GIT085&#39;);">UPDATE employees SET LAST_NAME='Radadiya' WHERE EMPLOYEE_ID='89';</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21142997386649218354&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;21142996728322217475&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20699046429456463864&#39;,&#39;GIT085&#39;);">SELECT *FROM SUP2;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20699045467835461200&#39;,&#39;GIT085&#39;);">SELECT *FROM SEP2;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20698863067739395120&#39;,&#39;GIT085&#39;);">INSERT INTO SUP2 SELECT *FROM EMPLOYEE WHERE EMP_NAME LIKE '_n___%';</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20698860866623384987&#39;,&#39;GIT085&#39;);">CREATE TABLE SUP2 AS SELECT *FROM EMPLOYEE WHERE EMP_NO=NULL;
+</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">2 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20698842759088362542&#39;,&#39;GIT085&#39;);">SELECT *FROM SUP2;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604621197586567604&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604608754153943216&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('89','Jayraj','160120116085@git.org.in','2000','2-2-17','11');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604556276941543424&#39;,&#39;GIT085&#39;);">SELECT DEPT_NAME FROM DEPARTMENT WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604486138167534797&#39;,&#39;GIT085&#39;);">SELECT DEPT_NAME FROM employees WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604461608698517507&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604459420599514891&#39;,&#39;GIT085&#39;);">UPDATE employees SET LAST_NAME='Prajapati' WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604432497101885487&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604438059653500655&#39;,&#39;GIT085&#39;);">UPDATE employees SET  EMAIL='160120116085@gti.org.in' WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604405266881498396&#39;,&#39;GIT085&#39;);">UPDATE employees SET  EMAIL=160120116085@gti.org.in WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604377979501480882&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604353727200858271&#39;,&#39;GIT085&#39;);">ALTER TABLE employees DROP COLUMN commission_pot;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604334512191852023&#39;,&#39;GIT085&#39;);">UPDATE employees SET commission_pot=0 WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604331559669849747&#39;,&#39;GIT085&#39;);">UPDATE employees SET commission_pot=0 WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604305342161466466&#39;,&#39;GIT085&#39;);">UPDATE employees SET commission_pot=1 WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604330809294847979&#39;,&#39;GIT085&#39;);">UPDATE employees SET commission_pot=5 WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604329383100846096&#39;,&#39;GIT085&#39;);">UPDATE employees SET commossion_pot=5 WHERE EMPLOYEE_ID=85;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604032760551451456&#39;,&#39;GIT085&#39;);">DELETE employees WHERE EMPLOYEE_ID=1;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603984452856827857&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20604003346363441809&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','5000','0','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603935853962820181&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('1','P','p','5','0','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603933886747817802&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('1','P','p','5000','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603963573621434201&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('8','P','p','5000','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603961911502432811&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','P','p','5000','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603931965744814124&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','p','5000','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603959138400430060&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','5000','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603956346230428403&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','5000.00','50','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603954840264427369&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','5000.00','50.00','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603928787177809077&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','25000.00','50.00','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603924225722421227&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','250.00','50.00','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603920374182418313&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','pareshprajapati','25000.00','50.00','1-1-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603745439986400397&#39;,&#39;GIT085&#39;);">CREATE TABLE employees (employee_id NUMBER(6),last_name VARCHAR2(25) NOT NULL,email VARCHAR2(25),sal</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603760147229746805&#39;,&#39;GIT085&#39;);">DROP TABLE employees;
+</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603751089294743331&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','prajapatipareshbhai','25000.00','50.00','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603748955833740905&#39;,&#39;GIT085&#39;);">ALTER TABLE employees DROP COLUMN hire_date;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603724503699737799&#39;,&#39;GIT085&#39;);">ALTER TABLE employees DROP COLUMN hire_date;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603526029881697791&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','prajapatipareshbhai','25000.00','50.00','3-7-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603472968721308130&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('85','Paresh','prajapatipareshbhai','25000.00','50.00','3-7-17','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603387339359686792&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','25000.00','50.00','3-7-17','16')</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603386822450685041&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','25000.00','50.00','21-7-17','16'</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603255826812683234&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','25000.00','50.00','21-07-17','16</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603251933231675547&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','25000.00','50.00','21-07-2017','</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603165754922657612&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','5000.00','50.00','21-07-2017','1</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603165324294654625&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','prajapatipareshbhai','25000.00','50.00','21-07-2017','</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603162131951645041&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603155572528255260&#39;,&#39;GIT085&#39;);">SELECT *FROM employees;</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603048309700628199&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','pbp','25000.00','50.00','21-07-2017','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603048188504626991&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','pbp386git.org.in','25000.00','50.00','21-07-2017','16'</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603047828163626323&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','pbp386@git.org.in','25000.00','50.00','21-07-2017','16</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20603046941028625348&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','pbp@git.org.in','25000.00','50.00','21-07-2017','16');</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20602885145877621678&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('085','Paresh','160120116085@git.org.in','25000.00','50.00','21-07-201</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20602883744430615721&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('1','Paresh','160120116085@git.org.in','25000.00','50.00','21-07-2017'</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+<tr><td class="a-Report-cell" headers="CREATED">3 weeks ago</td><td class="a-Report-cell" headers="SQL_CMD"><a href="javascript:sc_postHistory(&#39;20602882247712612500&#39;,&#39;GIT085&#39;);">INSERT INTO employees values ('1','Paresh','160120116085@git.org.in','25000.00','100.00','21-07-2017</a></td><td class="a-Report-cell" headers="PARSED_SCHEMA">GIT085</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="a-Report-links"></div>
+    <table class="a-Report-pagination a-Report-pagination a-Report-pagination--bottom"></table>
+  </div>
+</div>
+  </div>
+</div><div id="R11140505307196687" class=""><input type="hidden" id="OB_OBJECT_NAME" name="OB_OBJECT_NAME" value=""><input type="hidden" id="P0_PPRTIMESTAMP" name="P0_PPRTIMESTAMP" value=""></div></div></div>
+
+<div id="SavedSQLHolder" style="display:none;"></div>
+
+<div id="sql-schema-select" style="display: none;"></div>
+</div>
+</div>
+</div>
+    </main>
+  </div>
+<footer class="a-Footer">
+  <div class="a-Footer-info">
+    <span class="a-Footer-attribute">
+      <span class="a-Icon icon-user" title="User"></span>
+      <span class="u-VisuallyHidden">User</span>
+      160120116085@GIT.ORG.IN
+    </span>
+    <span class="a-Footer-attribute">
+      <span class="a-Icon icon-workspace" title="Workspace"></span>
+      <span class="u-VisuallyHidden">Workspace</span>
+      GITIT
+    </span>
+    <span class="a-Footer-attribute">
+      <span class="a-Icon icon-language" title="Language"></span>
+      en
+    </span>
+  </div>
+  <div class="a-Footer-copyright">Copyright © 1999, 2017, Oracle. All rights reserved.</div>
+  <div class="a-Footer-version">Application Express 5.1.2.00.09</div>
+</footer>
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="ZLGv84AM4j-O4T8hpGmx2w"></form>
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"triggeringElementType":"JAVASCRIPT_EXPRESSION","triggeringElement": function() {
+return (window
+); },"bindType":"bind","bindEventType":"unload","anyActionsFireOnInit":true,actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"EVENT_SOURCE",javascriptFunction:function (){ sc_removeJob();
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B6472826193915838","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ sc_CancelSave();
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B6474106585919640","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ sc_saveSql();
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B10646217569354338","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ apex.jQuery("#saveDialog").dialog("open");
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B10644629905348428","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ html_TabClick(html_GetElement('result_tab'),'resultsHolder');
+setTimeout(function() {
+    sc_getResults('10599517866756');
+},100);
+
+},"action":"NATIVE_JAVASCRIPT_CODE"}]}];
+}
+</script>
+
+
+<script type="text/javascript" src="./COUNTRY_files/sc_core.js.download"></script>
+<script type="text/javascript">
+apex.jQuery(document).ready(function() {
+  apex.jQuery(".a-Body, .a-Main").addClass("resize");  
+  apex.theme.pageResizeInit();    
+});
+
+</script>
+<script type="text/javascript" src="./COUNTRY_files/interactiveGrid.min.js.download"></script>
+<script type="text/javascript">
+apex.jQuery( document ).ready( function() {
+(function(){var e = apex.jQuery("#adminMenu_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup(e);
+}
+e.menu({ slide: e.hasClass("js-slide")});
+})();
+(function(){var e = apex.jQuery("#helpMenu_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup(e);
+}
+e.menu({ slide: e.hasClass("js-slide")});
+})();
+(function(){apex.widget.selectList("#P1003_SCHEMA",{"ajaxIdentifier":"LxmOjkpp2e7yYkIIR7Ugd2OpC8GLODnQCXJCPPVBSJWEa-0YlAbcqjoaHMBUzhud"});})();
+(function(){apex.widget.textarea("P1003_SAVE_DESC",{isResizable:true});})();
+(function(){apex.jQuery('#SqlAndResults').splitter(
+{"orientation":"vertical","positionedFrom":"end","noCollapse":true,"iframeFix":false,"collapsed":false,"minSize":100,"realTime":false,"restoreText":"Restore","collapseText":"Collapse","title":"Bottom Splitter",
+change: function(e, ui) {
+apex.server.plugin('ZM1Wn81N2RJTKQW1OMjVVWPNNT6gp_C1L2uGhjBCQArxtPvLv3Po1rvPCWP4fYx1', {
+x01: (ui.lastPosition - ui.lastPosition % 1), x02: ui.collapsed}, {
+queue: {action: "lazyWrite", name: "s1157686386582338224"}, dataType: ""} );
+},
+"position":383
+});})();
+(function(){apex.jQuery(document).on("keydown", function(e) {
+if ( e.ctrlKey && e.which === 117 ) {
+if ( apex.jQuery.apex.splitter.nextSplitter( e.shiftKey ) ) {
+e.preventDefault();
+} }  });
+})();
+(function(){apex.widget.selectList("#P1003_ROWS",{"ajaxIdentifier":"LxmOjkpp2e7yYkIIR7Ugd9nw-6sw6djIiLO7oMyiq-D25PfrRlOPjq_b8YZB3kSd"});})();
+(function(){apex.widget.textarea("P1003_SQL_COMMAND1",{});})();
+(function(){apex.da.initDaEventList();})();
+(function(){apex.da.init();})();
+
+sc_PageInit();
+apex.jQuery('#scCommandHolder').bind("resize", function(e) {
+  var h = $(this).height(), w = $(this).width(),
+    ta$ = apex.jQuery("#P1003_SQL_COMMAND1");
+  apex.util.setOuterHeight(ta$, h);
+  apex.util.setOuterWidth(ta$, w);
+  e.stopPropagation();
+})
+$("body").trigger("resize");
+apex.jQuery('#P1003_SQL_COMMAND1').bind('keydown', function(e){
+  sc_quickKeys(e);
+});
+
+});</script>
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog--inline ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="saveDialog" style="display: none; position: fixed;" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">Save SQL</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">Close</span></button></div><div id="saveDialog" class="a-DialogRegion js-regionDialog js-draggable js-modal js-resizable js-dialog-size480x320 ui-dialog-content ui-widget-content" style="">
+  <div class="a-DialogRegion-body">
+<div class="a-Form-fieldContainer " id="P1003_SAVE_NAME_CONTAINER"><div class="a-Form-labelContainer">
+  <span class="a-Form-required"><span class="a-Icon icon-asterisk"></span></span><label for="P1003_SAVE_NAME" id="P1003_SAVE_NAME_LABEL" class="a-Form-label">Name <span class="u-VisuallyHidden">(Value Required)</span></label>
+</div><div class="a-Form-inputContainer"><input type="text" id="P1003_SAVE_NAME" name="P1003_SAVE_NAME" class="text_field apex-item-text" value="" size="30" maxlength="2000"><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="6470812902902555" title="Help Text: Name" aria-label="Help Text: Name" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P1003_SAVE_NAME_error_placeholder" class="a-Form-error" data-template-id="488671190365029680_ET"></span></div></div><div class="a-Form-fieldContainer " id="P1003_SAVE_DESC_CONTAINER"><div class="a-Form-labelContainer">
+<label for="P1003_SAVE_DESC" id="P1003_SAVE_DESC_LABEL" class="a-Form-label">Description</label>
+</div><div class="a-Form-inputContainer"><fieldset id="P1003_SAVE_DESC_fieldset" class="textarea apex-item-textarea" tabindex="-1"><textarea name="P1003_SAVE_DESC" rows="4" cols="30" maxlength="32767" wrap="virtual" id="P1003_SAVE_DESC" class="textarea apex-item-textarea" style="resize: both;"></textarea></fieldset><button class="a-Button a-Button--noUI a-Button--helpButton js-itemHelp" data-itemhelp="6471725716906222" title="Help Text: Description" aria-label="Help Text: Description" tabindex="-1" type="button"><span class="a-Icon icon-help" aria-hidden="true"></span></button><span id="P1003_SAVE_DESC_error_placeholder" class="a-Form-error" data-template-id="488671029226029669_ET"></span></div></div>
+  </div>
+  <div class="a-DialogRegion-buttons">
+     <div class="a-ButtonRegion a-ButtonRegion--dialogRegion">
+       <div class="a-ButtonRegion-wrap">
+         <div class="a-ButtonRegion-col a-ButtonRegion-col--left"><div class="a-ButtonRegion-buttons"></div></div>
+         <div class="a-ButtonRegion-col a-ButtonRegion-col--right"><div class="a-ButtonRegion-buttons"><button onclick="void(0);" class="a-Button " type="button" id="B6472826193915838">Cancel</button><button onclick="void(0);" class="a-Button a-Button--hot " type="button" id="B6474106585919640">Save</button></div></div>
+       </div>
+     </div>
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div id="accountMenu_menu" class="a-Header-accountDialog a-Menu" tabindex="-1" role="menu" style="display: none;">
+  <div class="a-MediaBlock a-Menu-content">
+    <div class="a-MediaBlock-graphic">
+      <span class="a-Header-userPhoto a-Header-userPhoto--large a-Header-userPhoto--default">
+        <span class="a-Header-noUserPhoto gi-icon-user-no-photo"></span>
+      </span>
+      <a href="javascript:apex.navigation.dialog(&#39;f?p=4350:3:10599517866756::NO:::\u0026p_dialog_cs=ZW62ox_VaejAvhTn2eiT5e4AAdSTdqpRVnaIJd4723MBvtLt6dajOAX4IgROus30Kgst7iTR3BL7kG8_pRGQdg&#39;,{title:&#39;Edit Profile&#39;,height:&#39;550&#39;,width:&#39;600&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,resizable:true,minWidth:500,minHeight:400},&#39;a-Dialog--uiDialog&#39;,apex.jQuery(&#39;#R385816859034290012&#39;));" class="a-Header-accountDialog-editProfile">Edit Profile</a>
+    </div>
+    <div class="a-MediaBlock-content">
+      <div class="a-Menu-label">
+        <span class="a-Header-dialogText a-Header-dialogName">Pareshbhai Prajapati</span>
+        <span class="a-Header-dialogText a-Header-dialogUsername">160120116085@git.org.in</span></div>
+      <div class="a-Menu-label">
+        <span class="a-Header-dialogLabel">
+Workspace</span><span class="a-Header-dialogValue">GITIT</span></div>      <div class="a-Menu-label">
+<span class="a-Header-dialogLabel">Role</span><span class="a-Header-dialogValue">Administrator</span></div>    </div>
+  </div>
+  <div class="a-Header-accountDialog-buttons">
+    <div class="a-Toolbar">
+      <div class="a-Toolbar-items a-Toolbar-items--left">
+        <button type="button" onclick="javascript:apex.navigation.dialog(&#39;f?p=4350:102:10599517866756::NO::F4350_P102_USER_ID:18382175595342198989\u0026p_dialog_cs=R5T5hGF9SIY3BIYP2bI1GGChRq93uXTbLPyO_wZw_qlHSjVLY_qbIT3te5uREgoGIkPqmYcZ7s7h9iwOV0nUgA&#39;,{title:&#39;Preferences&#39;,height:&#39;480&#39;,width:&#39;720&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,resizable:true,minWidth:500,minHeight:400},&#39;a-Dialog--uiDialog&#39;,apex.jQuery(&#39;#R385816859034290012&#39;));" class="a-Button">Preferences</button>
+      </div>
+      <div class="a-Toolbar-items a-Toolbar-items--right">
+        <button type="button" onclick="apex.navigation.redirect(&#39;apex_authentication.logout?p_app_id=4500\u0026p_session_id=10599517866756&#39;);" class="a-Button">Sign out</button>
+      </div>
+    </div>
+  </div>
+</div><div id="adminMenu_menu" class="a-Menu" style="display:none;" tabindex="-1" role="menu"><ul><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:1:10599517866756:::::" title="">Administration</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="">------</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4500:1003:10599517866756::NO:::" title="">Manage Service</a><ul><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:21:10599517866756:::::" title="">Manage Service</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="">------</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:17:10599517866756::NO:RP::" title="">Set Workspace Preferences</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;f?p=4350:35:10599517866756:::::\u0026p_dialog_cs=lHNU_AbZe7Q62wlE0psmbHUfFOhUxsWkPfdFctZP1JcbTI8s8fp8SYiwaUL4r0ufbhIpL_HT6tJeqAdGXsWg1Q&#39;,{title:&#39;Workspace Message&#39;,height:&#39;400&#39;,width:&#39;500&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,resizable:true,minWidth:500,minHeight:400},&#39;a-Dialog--uiDialog&#39;,apex.jQuery(&#39;#adminMenu_menu&#39;));" title="">Edit Announcement</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:101:10599517866756:::::" title="">Workspace Utilization</a></li></ul></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:55:10599517866756:::::" title="">Manage Users and Groups</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:22:10599517866756:::::" title="">Monitor Activity</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/f?p=4350:33:10599517866756:::::" title="">Dashboards</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;f?p=4350:3:10599517866756::NO:3::\u0026p_dialog_cs=ZW62ox_VaejAvhTn2eiT5e4AAdSTdqpRVnaIJd4723MBvtLt6dajOAX4IgROus30Kgst7iTR3BL7kG8_pRGQdg#pwd&#39;,{title:&#39;Edit Profile&#39;,height:&#39;550&#39;,width:&#39;600&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,resizable:true,minWidth:500,minHeight:400},&#39;a-Dialog--uiDialog&#39;,apex.jQuery(&#39;#adminMenu_menu&#39;));" title="">Change My Password</a></li>
+</ul></div><div id="helpMenu_menu" class="a-Menu" style="display:none;" tabindex="-1" role="menu"><ul><li data-id="helpLinkNewWindow" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="http://apex.oracle.com/doc51/AEUTL/using-SQL-commands.htm" title="">SQL Commands Documentation</a></li>
+<li data-id="helpLinkNewWindow" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="http://apex.oracle.com/doc51" title="">Documentation Library</a></li>
+<li data-id="helpLinkForum" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/forum" title="">Discussion Forum</a></li>
+<li data-id="helpLinkOTN" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="http://otn.oracle.com/apex" title="">Oracle Technology Network</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="">---</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;f?p=4350:9:10599517866756:::::\u0026p_dialog_cs=oEj3OwueAe2yHPaznRpKVm3__hGnbwS4pJ1r8gLoGbJKRyxuIQZr7VmTEiamhCceETtY87kvwXpdr_xk2H8rrw&#39;,{title:&#39;About Application Express&#39;,height:&#39;500&#39;,width:&#39;490&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,scroll:&#39;auto&#39;},&#39;a-Dialog--uiDialog&#39;,apex.jQuery(&#39;#helpMenu_menu&#39;));" title="">About</a></li>
+</ul></div></body></html>
